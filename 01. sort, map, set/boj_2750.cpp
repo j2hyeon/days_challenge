@@ -1,4 +1,4 @@
-// 정렬sort
+// 수 정렬하기
 #include <iostream>
 #include <vector>
 

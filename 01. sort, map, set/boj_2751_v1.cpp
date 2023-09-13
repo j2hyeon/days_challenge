@@ -1,4 +1,4 @@
-// 수 정렬하기 - merge sort
+// 수 정렬하기
 #include <iostream>
 #include <vector>
 #include <algorithm> //sort함수 이용

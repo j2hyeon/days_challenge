@@ -1,0 +1,53 @@
+**내용 정리**
+
+**정렬**
+// O(n2)
+
+1. Selection sort 선택정렬
+   : 정렬 되지 않은 데이터들에 대해 가장 작은 데이터를 찾아 가장 앞의 데이터와 교환해나아가는 방식
+   :1~n 정렬 => 2~n 정렬 => .... => n-1 ~ n 정렬
+
+2. Insertion sort 삽입정렬
+   : 정렬되지 않은 임의의 데이터를 이미 정렬된 부분의 적절한 위치에 삽입해가며 정렬
+   : i(>=2)번째 데이터와 그 앞의 데이터들을 비교해가면서 i++
+   : 1~2정렬, 1~3정렬 ... 1~n 정렬
+
+3. Bubble sort 버블정렬
+   :
+
+//O(nlogn)
+
+1. Merge sort
+   : 반으로 분할 -> 분할 ... -> 정렬 -> 정렬 ... -> 합치기
+   : 재귀함수 이용
+
+// 주로 사용하는 함수
+sort함수
+: #include <algorithm> 이용
+: sort(x.begin(), x.end()) 꼴
+: default : 오름차순
+: 세번째 인자 -> 내림차순 greater<>(), +비교함수-> false이면 swap
+
+**셋**
+Set
+: KEY value (원소)의 집합
+: 정렬된 상태, 중복 x
+: 검색, 삽입insert, 삭제 -> O(logn)
+: 구조 - BST (binary search tree) : 부모 - 2자식 (왼 <= 오)
+: 랜덤idx 접근 x -> 반복자 iterator 이용
+
+예 ::
+set<int> ss;
+ss.insert(3);
+set<int> :: iterator iter;
+for(iter = ss.begin();iter!=e.end();iter++){
+cout << iter << ' '; // 포인터로 접근
+}
+
+**맵**
+Map
+: key-value 쌍
+: key - 정렬 o, 중복x
+: 검색, 삽입, 삭제 -> O(logN)
+: 랜덤idx 접근 x -> iterator이용
+: set과 동일하게 BST 구조

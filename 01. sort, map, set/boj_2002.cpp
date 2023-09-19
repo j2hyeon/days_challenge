@@ -4,12 +4,11 @@
 
 using namespace std;
 
-// 201 -> 012
 int racing(int n, vector<int> &tun_out)
 {
     int count = 0; // 추월한 차량의 개수
 
-    // 추월한 후의 상태를 이전 idx 순으로 정렬하며 추월한 차량의 수를 count
+    // 추월했다고 여겨지는 차량이 존재하면 count ++
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)

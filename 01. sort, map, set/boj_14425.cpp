@@ -16,7 +16,7 @@ int main()
     for (i = 0; i < a; i++)
     {
         cin >> s;
-        S.insert(s);
+        S.insert(s); // 문자열안에 나열
     }
     for (i = 0; i < b; i++)
     {

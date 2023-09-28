@@ -51,3 +51,8 @@ Map
 : 검색, 삽입, 삭제 -> O(logN)
 : 랜덤idx 접근 x -> iterator이용
 : set과 동일하게 BST 구조
+
+삽입 : insert
+제거 : erase 
+찾기 : find
+반복자 : map<int,string> :: iterator it;
